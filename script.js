@@ -11,10 +11,9 @@ const arr = ["s", 'a','l',"e" ,"e", "m" ]
 let pass = '';
 generateBtn.addEventListener('click', function(e){
     e.preventDefault()
-    if(!(inputEl.value === "")){
-        pass = ''
-        inputEl.value = ''
-    }
+    pass = ''
+    inputEl.value = ''
+        
     if(inputEl.value === ""){
         for(let i = 0; i < 12; i++){
             let randnum = Math.floor(Math.random()* allChar.length);
